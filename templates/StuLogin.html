@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %}学生登录{% endblock %}
+{% block content %}
+<div class="'container">
+    <form name="login" action="/" method="get">
+        <label for="user_id">学号：</label>
+        <input id="user_id" type="text" name="user_id">
+
+        <label for="user_pass" >密码：</label>
+        <input id="user_pass" type="password" name="user_pass">
+        <input type="submit" value="登录">
+        <input type="reset" value="重填">
+    </form>
+
+</div>
+
+{% endblock %}
